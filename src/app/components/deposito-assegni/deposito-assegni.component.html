@@ -1,0 +1,13 @@
+<form #laForm="ngForm" class="auth" (ngSubmit)="aggiungiAssegni()">
+    <p>Deposita Assegni</p> 
+     <mat-form-field appearance="fill">
+       <mat-label>Deposita Assegni </mat-label>
+       <input
+         matInput
+         type="number"
+         name="number"
+         [(ngModel)]="model.id"
+         placeholder="Deposita"/>
+     </mat-form-field>
+     <button mat-raised-button color="primary" type="submit">Aggiungi</button>
+ </form>

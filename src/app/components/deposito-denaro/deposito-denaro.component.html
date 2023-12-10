@@ -1,0 +1,14 @@
+
+<form #laForm="ngForm" class="auth" (ngSubmit)="aggiungiDenaro()">
+   <p>Deposita contante</p> 
+    <mat-form-field appearance="fill">
+      <mat-label>Deposita contante </mat-label>
+      <input
+        matInput
+        type="number"
+        name="number"
+        [(ngModel)]="model.id"
+        placeholder="Deposita"/>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Aggiungi</button>
+</form>
